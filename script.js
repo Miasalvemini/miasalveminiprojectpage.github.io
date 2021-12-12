@@ -154,7 +154,7 @@ let xhr = new XMLHttpRequest();
 xhr.responseType = "json";
 xhr.addEventListener("load", responseReceivedHandler);
 let requestStart = "https://api.bls.gov/publicAPI/v2/timeseries/data/CEU";
-let requestEnd = "00000001+API_key";
+let requestEnd = "00000001"+API_key;
 xhr.open("GET", requestStart + sector + requestEnd);
 console.log (requestStart + sector + requestEnd);
 xhr.send();
